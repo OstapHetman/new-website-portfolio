@@ -6,6 +6,10 @@
 	margin:0;
 	padding:0;
 }
+html {
+height:100%;
+overflow-x:hidden;
+}
 /***************HOME PAGE**********/
 #home-page {
 	width: 100%;
@@ -78,6 +82,54 @@ color: black;
 #imac-text p:nth-child(1) {
 	font-size: 2.2em;
 } 
+/***************ABOUT PAGE*************/
+#home-page {
+	width: 100%;
+	height: 100vh;
+}
+#portret {
+	display: flex;
+	justify-content: center; 
+}
+#portret img {
+	order: 1;
+	width: 100%;
+	max-width: 160px;
+	height: auto;
+}
+#about {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	vertical-align: center;
+}
+#cloud-about-page {
+	order:2;
+}
+#about-text {
+	order: 3;
+	width: 100%;
+	max-width: 500px;
+}
+#cloud-about-page img {
+	max-width: 256px;
+	width: 100%;
+	height: auto;
+}
+/**************SKILLS PAGE***************/
+#skills-page {
+width: 100%;
+height: 100vh;
+background-color: #75dbff;
+}
+/*************PORTFOLIO PAGE*********/
+#portfolio-page {
+width: 100%;
+height: 100vh;
+background-color: #75dbff;
+}
+
 
 
 
