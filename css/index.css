@@ -51,11 +51,35 @@
 	display: 	none;
 	cursor: 	pointer;
 }
-.nav-list li a:hover {
-	background: white;
-	color: #d94819;
-	height: 1em;
+#nav-menu {
+	height: 50px;
 }
+.nav-list li a:hover {
+color: black;
+}
+#imac-text {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+#imac-text img { 
+		margin-top: 20%;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    align-self: center;
+}
+#imac-text p {
+	font-size: 1.1em;
+	color:white;
+	text-align: center;
+}
+#imac-text p:nth-child(1) {
+	font-size: 2.2em;
+} 
+
+
 
 
 
