@@ -83,39 +83,50 @@ color: black;
 	font-size: 2.2em;
 } 
 /***************ABOUT PAGE*************/
-#home-page {
+#about-page {
 	width: 100%;
-	height: 100vh;
-}
-#portret {
-	display: flex;
-	justify-content: center; 
-}
-#portret img {
-	order: 1;
-	width: 100%;
-	max-width: 160px;
-	height: auto;
-}
-#about {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
-	vertical-align: center;
+	height: 100%;
 }
 #cloud-about-page {
-	order:2;
-}
-#about-text {
-	order: 3;
-	width: 100%;
-	max-width: 500px;
+	display: block;
+	float: left;
+	width: 50%;
+	height: 100vh;
+	background-color: #00a9ff;
 }
 #cloud-about-page img {
+	float: left;
+	display: block;
+	margin-top: 40vh;
+	margin-left: 100px;
+	max-width: 256px;
+	width: 30%;
+	height: auto;
+}
+#portret{
 	max-width: 256px;
 	width: 100%;
 	height: auto;
+}
+#about-text {
+	margin-top: 20%;
+	display: inline-block;
+	float: right;
+	width: 50%;
+	
+	color:#d94819;
+}
+#about-page p:nth-child(2) {
+	display: block;
+	margin-top: 200px;
+}
+#portret {
+	display: block;
+	width: 100%;
+	max-width: 160px;
+	height: auto;
+	position: absolute;
+	margin:0 auto;
 }
 /**************SKILLS PAGE***************/
 #skills-page {
@@ -160,8 +171,6 @@ background-color: #75dbff;
     border-radius: 50%;
     z-index: 9999;
 }
-
-
 .animated{-webkit-animation-duration:1s;-moz-animation-duration:1s;-o-animation-duration:1s;animation-duration:1s;-webkit-animation-fill-mode:both;-moz-animation-fill-mode:both;-o-animation-fill-mode:both;animation-fill-mode:both;}
 @-webkit-keyframes flipInX {
     0% {
