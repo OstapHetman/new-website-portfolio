@@ -59,7 +59,11 @@ overflow-x:hidden;
 	height: 50px;
 }
 .nav-list li a:hover {
-color: black;
+background-color:white;
+	color:#d94819;
+}
+.nav-logo:hover {
+	color: black;
 }
 #imac-text {
 	display: flex;
