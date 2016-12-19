@@ -1,78 +1,79 @@
 @media (max-width: 700px) {
-  .nav-menu {
-    display:  block;
-  }
-  .nav-list {
-    /*float: left;*/
-    width:    100%;
-    height:   0;
-  }
-  .nav-open {
-    height: auto;
-  }
-  .nav-list li {
-    width:    100%;
-  }
-  .nav-list li a {
-    padding:  10px 10px;
-  }
+    .nav-menu {
+        display: block;
+    }
+    .nav-list {
+        /*float: left;*/
+        width: 100%;
+        height: 0;
+    }
+    .nav-open {
+        height: auto;
+    }
+    .nav-list li {
+        width: 100%;
+    }
+    .nav-list li a {
+        padding: 10px 10px;
+    }
 }
 @media screen and (min-width: 1000px) {
-  .cell {
-    width: calc(100% / 3);
-  }
+    .cell {
+        width: calc(100% / 3);
+    }
 }
 @media screen and (min-width: 610px) {
-  .grid {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-  }
-  .cell {
-    width: 50%;
-  }
+    .grid {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .cell {
+        width: 50%;
+    }
 }
-@media (max-width: 610px)
-{
-  *{box-sizing:border-box}
-#imac-text {
-  margin-top: 20%;
-} 
-#cloud-about-page {
-  display: none;
-}
-#text-home-page {
-  width: 100%;
-  height: auto;
-  max-width: 461.438px;
-  text-align: center;
-  margin-top:45%;
-}
-#about-text {
-  position: absolute;
-  display: block;
-  width: 100%;
-margin-top: -0.1px;
-  font-size: 20px;
-}
-img#portret {
-  position: relative;
-  display: block;
-  max-width: 160px;
-  width: 100%;
-}
+@media (max-width: 610px) {
+    * {
+        box-sizing: border-box
+    }
+    #imac-text {
+        margin-top: 20%;
+    }
+    #cloud-about-page {
+        display: none;
+    }
+    #text-home-page {
+        width: 100%;
+        height: auto;
+        max-width: 461.438px;
+        text-align: center;
+        margin-top: 45%;
+    }
+    #about-text {
+        position: absolute;
+        display: block;
+        width: 100%;
+        margin-top: -0.1px;
+        font-size: 20px;
+    }
+    img#portret {
+        position: relative;
+        display: block;
+        max-width: 160px;
+        width: 100%;
+    }
 }
 @media (max-width: 670px) {
-  #imac-text {
-  margin-top: 20%;
-} 
+    #imac-text {
+        margin-top: 20%;
+    }
 }
 @media (max-width: 530px) {
-  #imac-text img {
-  display: none;
-} 
-#imac-text p:nth-child(1) {
-  margin-top: 20%;
-  font-size: 4em;
-}
+    #imac-text img {
+        display: none;
+    }
+    #imac-text p:nth-child(1) {
+        margin-top: 20%;
+        font-size: 4em;
+    }
 }
