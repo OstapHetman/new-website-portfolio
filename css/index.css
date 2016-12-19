@@ -1,181 +1,189 @@
 * {
-	font-family: 'Montserrat', sans-serif;
-	text-decoration: none;
-	list-style: none;
-	box-sizing: border-box;
-	margin:0;
-	padding:0;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 html {
-height:100%;
-overflow-x:hidden;
+    height: 100%;
+    overflow-x: hidden;
 }
 /***************HOME PAGE**********/
 #home-page {
-	width: 100%;
-	height: 100vh;
-	background-color: #75dbff;
+    width: 100%;
+    height: 100vh;
+    background-color: #75dbff;
 }
 /* WIDTH SETTING */
 .nav-hold {
-	width: 95%;
-	max-width: 1000px;
-	margin: 0 auto;
+    width: 95%;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 .nav-bar {
-	width: 100%;
-	background-color:#d94819;
+    width: 100%;
+    background-color: #d94819;
 }
 .nav-hold {
-	overflow: hidden;
+    overflow: hidden;
 }
 .nav-logo {
-	font-size: 2.5em;
-	float: 		left;
-	display: 	block;
-	color: 		#f9f9f9;
-  padding: 	20px;
+    font-size: 2.5em;
+    float: left;
+    display: block;
+    color: #f9f9f9;
+    padding: 20px;
 }
 .nav-list {
-	float: right;
+    float: right;
 }
 .nav-list li {
-	float: left;
+    float: left;
 }
 .nav-list li a {
-	font-size: 1.2em;
-	display: 	block;
-	padding: 	33px 20px;
-	color: 		#f9f9f9;
+    font-size: 1.2em;
+    display: block;
+    padding: 33px 20px;
+    color: #f9f9f9;
 }
 .nav-menu {
-	color: 		#f9f9f9;
-	float: 		right;
-	padding: 	20px 10px;
-	display: 	none;
-	cursor: 	pointer;
+    color: #f9f9f9;
+    float: right;
+    padding: 20px 10px;
+    display: none;
+    cursor: pointer;
 }
 #nav-menu {
-	height: 50px;
+    height: 50px;
 }
 .nav-list li a:hover {
-background-color:white;
-	color:#d94819;
+    background-color: white;
+    color: #d94819;
 }
 .nav-logo:hover {
-	color: black;
+    color: black;
 }
 #imac-text {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
-#imac-text img { 
-		margin-top: 20%;
+#imac-text img {
+    margin-top: 20%;
     width: 100%;
     max-width: 600px;
     height: auto;
     align-self: center;
 }
 #imac-text p {
-	font-size: 1.1em;
-	color:white;
-	text-align: center;
+    font-size: 1.1em;
+    color: white;
+    text-align: center;
 }
 #imac-text p:nth-child(1) {
-	font-size: 2.2em;
-} 
+    font-size: 2.2em;
+}
 /***************ABOUT PAGE*************/
 #about-page {
-	width: 100%;
-	height: 100%;
+    width: 100%;
+    height: 100%;
 }
 #cloud-about-page {
-	display: block;
-	float: left;
-	width: 50%;
-	height: 100vh;
-	background-color: #00a9ff;
+    display: block;
+    float: left;
+    width: 50%;
+    height: 100vh;
+    background-color: #00a9ff;
 }
 #cloud-about-page img {
-	float: left;
-	display: block;
-	margin-top: 40vh;
-	margin-left: 100px;
-	max-width: 256px;
-	width: 30%;
-	height: auto;
-}
-#portret{
-	max-width: 256px;
-	width: 100%;
-	height: auto;
-}
-#about-text {
-	margin-top: 20%;
-	display: inline-block;
-	float: right;
-	width: 50%;
-	
-	color:#d94819;
-}
-#about-page p:nth-child(2) {
-	display: block;
-	margin-top: 200px;
+    float: left;
+    display: block;
+    margin-top: 40vh;
+    margin-left: 100px;
+    max-width: 256px;
+    width: 30%;
+    height: auto;
 }
 #portret {
-	display: block;
-	width: 100%;
-	max-width: 160px;
-	height: auto;
-	position: absolute;
-	margin:0 auto;
+    max-width: 256px;
+    width: 100%;
+    height: auto;
+}
+#about-text {
+    margin-top: 20%;
+    display: inline-block;
+    float: right;
+    width: 50%;
+    color: #d94819;
+}
+#about-page p:nth-child(2) {
+    display: block;
+    margin-top: 200px;
+}
+#portret {
+    display: block;
+    width: 100%;
+    max-width: 160px;
+    height: auto;
+    position: absolute;
+    margin: 0 auto;
 }
 /**************SKILLS PAGE***************/
 #skills-page {
-width: 100%;
-height: 100vh;
-background-color: #75dbff;
+    width: 100%;
+    height: 100vh;
+    background-color: #75dbff;
 }
 /*************PORTFOLIO PAGE*********/
 #portfolio-page {
-width: 100%;
-min-height: 100vh;
-max-height: 100%;
-background-color: #75dbff;
+    width: 100%;
+    min-height: 100vh;
+    max-height: 100%;
+    background-color: #75dbff;
 }
 .portfolio-grid {
-	list-style: none;
-	padding: 0;
-	margin: 0 auto;
-	text-align: center;
-	width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
 }
 .portfolio-grid li {
-	display: inline-block;
-	margin: 5px 5px 5px 5px;
-	vertical-align: top;
-    width:300px;
+    display: inline-block;
+    margin: 5px 5px 5px 5px;
+    vertical-align: top;
+    width: 300px;
 }
-.portfolio-grid li > a,
-.portfolio-grid li > a img {
+.portfolio-grid li>a,
+.portfolio-grid li>a img {
     width: 100%;
-	border: none;
-	outline: none;
-	display: block;
-	position: relative;
+    border: none;
+    outline: none;
+    display: block;
+    position: relative;
     transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
 }
-.portfolio-grid li > a img:hover {
-    opacity: 0.4;	
+.portfolio-grid li>a img:hover {
+    opacity: 0.4;
     border-radius: 50%;
     z-index: 9999;
 }
-.animated{-webkit-animation-duration:1s;-moz-animation-duration:1s;-o-animation-duration:1s;animation-duration:1s;-webkit-animation-fill-mode:both;-moz-animation-fill-mode:both;-o-animation-fill-mode:both;animation-fill-mode:both;}
+.animated {
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    -o-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
 @-webkit-keyframes flipInX {
     0% {
         -webkit-transform: perspective(400px) rotateX(90deg);
@@ -242,76 +250,70 @@ background-color: #75dbff;
 }
 /**********CONTACT PAGE**********/
 #contact-page {
-	width: 100%;
-	height: 100vh;
-	background-color: #75dbff;
+    width: 100%;
+    height: 100vh;
+    background-color: #75dbff;
 }
-#contact-form{
-	width: 100%;
-	height: auto;
+#contact-form {
+    width: 100%;
+    height: auto;
 }
-form{
-	margin-left: 100px;
-	width: 100%;
-	max-width: 400px;
-	padding-top: 40px;
-	color: white;
-	position: relative;
+form {
+    margin-left: 100px;
+    width: 100%;
+    max-width: 400px;
+    padding-top: 40px;
+    color: white;
+    position: relative;
 }
-label, input, textarea{
-	display: block;	
+label,input,textarea {
+    display: block;
 }
-input, textarea{
-	width: 100%;
-	max-width: 400px;	
-	border: none;
-	border-radius: 20px;
-	outline: none;
-	padding: 10px;
-	font-size: 1em;
-	color: #d94819;
-	transition: border 0.5s;
-	-webkit-transition: border 0.5s;
-	-moz-transition: border 0.5s;
-	-o-transition: border 0.5s;
-	border: solid 3px #98d4f3;	
-	-webkit-box-sizing:border-box;
-	-moz-box-sizing:border-box;
-	box-sizing:border-box;
+input,textarea {
+    width: 100%;
+    max-width: 400px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    padding: 10px;
+    font-size: 1em;
+    color: #d94819;
+    transition: border 0.5s;
+    -webkit-transition: border 0.5s;
+    -moz-transition: border 0.5s;
+    -o-transition: border 0.5s;
+    border: solid 3px #98d4f3;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
-input:focus, textarea:focus{
-	border: solid 3px #00a9ff;	
+input:focus,textarea:focus {
+    border: solid 3px #00a9ff;
 }
-textarea{
-	height: 150px;	
-	resize: none; 
-	overflow: auto;
+textarea {
+    height: 150px;
+    resize: none;
+    overflow: auto;
 }
-input[type="submit"]{
-	background-color: #d94819;
-	color: white;
-	height: 50px;
-	cursor: pointer;
-	margin-top: 30px;
-	font-size: 1.29em;
-	-webkit-transition: background-color 0.5s;
-	-moz-transition: background-color 0.5s;
-	-o-transition: background-color 0.5s;
-	transition: background-color 0.5s;
+input[type="submit"] {
+    background-color: #d94819;
+    color: white;
+    height: 50px;
+    cursor: pointer;
+    margin-top: 30px;
+    font-size: 1.29em;
+    -webkit-transition: background-color 0.5s;
+    -moz-transition: background-color 0.5s;
+    -o-transition: background-color 0.5s;
+    transition: background-color 0.5s;
 }
-input[type="submit"]:hover{
-	border: solid 3px #00a9ff;
-	color: #d94819;
-	background-color: white;
+input[type="submit"]:hover {
+    border: solid 3px #00a9ff;
+    color: #d94819;
+    background-color: white;
 }
-label{
-	font-size: 1.5em;
-	margin-top: 20px;
-	padding-left: 20px;
+label {
+    font-size: 1.5em;
+    margin-top: 20px;
+    padding-left: 20px;
 }
-
-
-
-
-
-
