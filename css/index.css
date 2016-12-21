@@ -135,7 +135,6 @@ body {
     background-color: #75dbff;
 }
 /*************PORTFOLIO PAGE*********/
-    /**/
 .container {
   margin: 0 auto;
   padding-right: .8em;
@@ -165,8 +164,7 @@ body {
 .name span {
   font-weight: 300;
 }
-
-img {
+.portfolio-img  {
     max-width: 100%;
 }
 .gallery-img {
@@ -174,23 +172,19 @@ img {
   width: 100%;
 }
 .gallery {
-    /* Max out the height within its container */
     margin-top: 10%;
     width: 100%;
     height: auto;
-    /* Add flexbox styles */
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 .photo-container {
   margin-bottom: 3em;
   text-align: center;
-  margin-left: .8em;    /* these margins depend on the .photo-container width in @media */
+  margin-left: .8em;  
   margin-right: .8em;
 }
-
 h2 {
   text-transform:uppercase;
   font-size: 1.5em;
@@ -201,21 +195,19 @@ p {
   margin: 0 0 1.5em;
   line-height: 1.4;
 }
-
 .button {
   display: block;
   width: 70%;
   margin: auto;
   text-decoration: none;
-  color: #4a89ca;
+  color: white;
   text-transform:uppercase;
   font-weight: 700;
-  border: 2px solid #4a89ca;
+  border: 2px solid #d94819;
+  background-color: #d94819;
   padding: .4em 0;
   border-radius: .5em;
 }
-
-/* -- Row 2 Styles --------- */
 .photo {
   position: relative;
   line-height: 0;
@@ -240,8 +232,6 @@ p {
 .photo-overlay h2 {
   margin-top: 0;
 }
-
-/* -- Row 3 Styles --------- */
 .slide .button {
   background: rgba(74,137,202, .8);
   color: #fff;
@@ -252,32 +242,21 @@ p {
   opacity: 1;
   background: #345d88;
 }
-
-
-/* =================================
-  Button Transitions
-==================================== */
 .button {
   transition: background .3s ease-in, color .3s ease-in;
 }
 .button:hover {
-  background: #4a89ca;
-  color: #fff;
+  background: white;
+  color: #d94819;
+  border: solid 3px #00a9ff;
 }
 
-/* =================================
-  Image Transforms & Transitions
-==================================== */
-
-/* -- Row 1 --------- */
-img {
+.portfolio-img  {
   transition: transform .5s cubic-bezier(.7,-0.39,.31,1.38);
 }
-img:hover {
+.portfolio-img :hover {
   transform: rotate(-5deg) scale(1.1);
 }
-
-/* -- Row 2 --------- */
 .photo-overlay {
   opacity: 0;
   transition: opacity .5s;
@@ -285,176 +264,24 @@ img:hover {
 .photo-overlay:hover {
   opacity: 1;
 }
-.photo img {
+.photo .portfolio-img  {
   transform-origin: 0 0;
 }
-.photo:hover img {
+.photo:hover .portfolio-img  {
   transform: scale(1.2);
 }
-
-/* -- Row 3 --------- */
 .slide .photo-overlay,
-.slide img {
+.slide .portfolio-img  {
   transition: transform .6s ease-out;
 }
 .slide .photo-overlay {
-  transform: translateX(-100%);    /* this hides our overlay to the left */
+  transform: translateX(-100%);    
 }
 .slide:hover .photo-overlay {
   transform: translateX(0);
 }
-.slide:hover img {
-  transform: translateX(100%);    /* this takes the image to the right */
-}
-
-
-
-/* =================================
-  Media Queries
-==================================== */
-@media (min-width: 0) and (max-width: 768px) {
-.container {
-  padding: 0 1.225em 2.5em;
-}
-}
-
-@media (min-width: 1024px) {
-.gallery {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.photo-container {
-  margin-bottom: 3em;
-  text-align: center;
-  width: 25%;  
-  flex-grow: 1;
-}
-}
-
-
-@media (min-width: 1600px) {
-.photo-container {
-  margin-bottom: 4em;
-  width: 30%;
-}
-h2 {
-  line-height: 1;
-}
-}
-
-    /****/
-#portfolio-page {
-    width: 100%;
-    min-height: 100vh;
-    max-height: 100%;
-    background-color: #75dbff;
-}
-.portfolio-grid {
-    list-style: none;
-    padding: 0;
-    margin: 0 auto;
-    text-align: center;
-    width: 100%;
-}
-.portfolio-grid li {
-    display: inline-block;
-    margin: 5px 5px 5px 5px;
-    vertical-align: top;
-    width: 300px;
-}
-.portfolio-grid li>a,
-.portfolio-grid li>a img {
-    width: 100%;
-    border: none;
-    outline: none;
-    display: block;
-    position: relative;
-    transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-}
-.portfolio-grid li>a img:hover {
-    opacity: 0.4;
-    border-radius: 50%;
-    z-index: 9999;
-}
-.animated {
-    -webkit-animation-duration: 1s;
-    -moz-animation-duration: 1s;
-    -o-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
-    -moz-animation-fill-mode: both;
-    -o-animation-fill-mode: both;
-    animation-fill-mode: both;
-}
-@-webkit-keyframes flipInX {
-    0% {
-        -webkit-transform: perspective(400px) rotateX(90deg);
-        opacity: 0;
-    }
-    40% {
-        -webkit-transform: perspective(400px) rotateX(-10deg);
-    }
-    70% {
-        -webkit-transform: perspective(400px) rotateX(10deg);
-    }
-    100% {
-        -webkit-transform: perspective(400px) rotateX(0deg);
-        opacity: 1;
-    }
-}
-@-moz-keyframes flipInX {
-    0% {
-        -moz-transform: perspective(400px) rotateX(90deg);
-        opacity: 0;
-    }
-    40% {
-        -moz-transform: perspective(400px) rotateX(-10deg);
-    }
-    70% {
-        -moz-transform: perspective(400px) rotateX(10deg);
-    }
-    100% {
-        -moz-transform: perspective(400px) rotateX(0deg);
-        opacity: 1;
-    }
-}
-@-o-keyframes flipInX {
-    0% {
-        -o-transform: perspective(400px) rotateX(90deg);
-        opacity: 0;
-    }
-    40% {
-        -o-transform: perspective(400px) rotateX(-10deg);
-    }
-    70% {
-        -o-transform: perspective(400px) rotateX(10deg);
-    }
-    100% {
-        -o-transform: perspective(400px) rotateX(0deg);
-        opacity: 1;
-    }
-}
-@keyframes flipInX {
-    0% {
-        transform: perspective(400px) rotateX(90deg);
-        opacity: 0;
-    }
-    40% {
-        transform: perspective(400px) rotateX(-10deg);
-    }
-    70% {
-        transform: perspective(400px) rotateX(10deg);
-    }
-    100% {
-        transform: perspective(400px) rotateX(0deg);
-        opacity: 1;
-    }
+.slide:hover .portfolio-img  {
+  transform: translateX(100%);    
 }
 /**********CONTACT PAGE**********/
 #contact-page {

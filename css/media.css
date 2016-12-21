@@ -80,22 +80,6 @@
         max-width: 160px;
         width: 100%;
     }
-    /*#about-text {
-        display: flex;
-        width: 100%;
-        font-size: 1.4em;
-        justify-content: center;
-        position: relative;
-    }
-    #portret-media {
-    visibility:visible;
-    display: flex;
-    justify-content: flex-start;
-    max-width: 160px;
-    width: 100%;
-    height: auto;
-    position: absolute;
-    }*/
 }
 @media (max-width: 670px) {
     #imac-text {
@@ -110,4 +94,33 @@
         margin-top: 20%;
         font-size: 4em;
     }
+}
+@media (min-width: 0) and (max-width: 768px) {
+.container {
+  padding: 0 1.225em 2.5em;
+}
+}
+
+@media (min-width: 1024px) {
+.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.photo-container {
+  margin-bottom: 3em;
+  text-align: center;
+  width: 25%;  
+  flex-grow: 1;
+}
+}
+@media (min-width: 1600px) {
+.photo-container {
+  margin-bottom: 4em;
+  width: 30%;
+}
+h2 {
+  line-height: 1;
+}
 }
