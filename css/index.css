@@ -70,6 +70,9 @@ body {
 .nav-logo:hover {
     color: black;
 }
+#logo {
+    text-decoration: none;
+}
 #imac-text {
     display: flex;
     flex-direction: row;
@@ -324,7 +327,7 @@ label {
 }
 /*********SKILLS PAGE*********/
 #bar-progress {
-    padding-top: 10%;
+    padding: 10%;
 }
 #pr-bar-1, #pr-bar-2, #pr-bar-3, #pr-bar-4, #pr-bar-5, #pr-bar-6 {
     margin:10px;
@@ -333,11 +336,17 @@ label {
 #pr-bar-2, #pr-bar-3, {
     padding: 50px;
 }
-#css-3 {
-    padding:18px;
-    font-size: 2em;
+#html5,#css3, #js, #jq, #ps, #ai {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 13px;
+    font-size: 1.1em;
     color: #d94819;
 }
 #aa {
     background-color:green;
+}
+.color {
+    background-image: none;
+    background-color:#d94819;
 }
