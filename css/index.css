@@ -10,6 +10,10 @@ html {
     height: 100%;
     overflow-x: hidden;
 }
+body {
+    max-width: 1920px;
+    margin:0 auto;
+}
 /***************HOME PAGE**********/
 #home-page {
     width: 100%;
