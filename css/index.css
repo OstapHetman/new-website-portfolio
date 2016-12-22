@@ -17,7 +17,7 @@ body {
 /***************HOME PAGE**********/
 #home-page {
     width: 100%;
-    height: 100vh;
+    height: 650px;
     background-color: #75dbff;
 }
 /* WIDTH SETTING */
@@ -97,7 +97,7 @@ body {
 /***************ABOUT PAGE*************/
 #about-page {
     width: 100%;
-    height: 100%;
+    min-height: 600px;
 }
 #cloud-about-page {
     display: flex;
@@ -105,7 +105,7 @@ body {
     align-items: center;
     float: left;
     width: 50%;
-    height: 100vh;
+    height: 600px;
     background-color: #00a9ff;
 }
 #portret-media {
@@ -122,7 +122,7 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    height: 100vh;
+    height: 600px;
     font-size: 1.1em;
     width: 50%;
     color: #d94819;
@@ -130,16 +130,14 @@ body {
 /**************SKILLS PAGE***************/
 #skills-page {
     width: 100%;
-    height: 100%;
-    min-height: 100vh;
+    height: 600px;
     background-color: #75dbff;
 }
 /*************PORTFOLIO PAGE*********/
 #portfolio-page {
     width: 100%;
-    height: 100%;
-    min-height: 100vh;
-    background-color: #75dbff;
+
+    background-color: #00a9ff;
 }
 .container {
   margin: 0 auto;
@@ -178,7 +176,6 @@ body {
   width: 100%;
 }
 .gallery {
-    margin-top: 10%;
     width: 100%;
     height: auto;
     display: flex;
@@ -290,19 +287,68 @@ p {
 }
 /**********CONTACT PAGE**********/
 #contact-page {
-    width: 100%;
-    height: 100vh;
-    background-color: #75dbff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 600px;
+  background-color: #75dbff;
 }
 #contact-form {
-    width: 100%;
+    width: 500px;
     height: auto;
 }
+#follow-form {
+  width: 400px;
+  height: 200px;
+}
+#icons {
+  width: 300px;
+}
+hr {
+  border: 0;
+    border-top: 1px solid white;
+}
+#location,#phone, #mail {
+  display: flex;
+  flex-direction: row;
+}
+#location img {
+  max-width: 40px;
+}
+#location,#phone, #mail p {
+  font-size: 1.3em;
+  color: white;
+}
+#ukraine,#number,#email p {
+  padding-top: 5px;
+  padding-left: 10px;
+}
+#phone img {
+  max-width: 40px;
+}
+#mail img {
+  max-width: 40px;
+}
+#follow {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#github img {
+  max-width: 50px;
+}
+#facebook img {
+  max-width: 50px;
+}
+#gmail img {
+  max-width: 70px;
+}
 form {
-    margin-left: 100px;
     width: 100%;
     max-width: 400px;
-    padding-top: 40px;
     color: white;
     position: relative;
 }
@@ -381,6 +427,19 @@ label {
 .color {
     background-image: none;
     background-color:#d94819;
+}
+/******FOOTER*******/
+footer {
+  height: 50px;
+  background-color:#d94819; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer p {
+  display: block;
+  margin:0;
+  color:white;
 }
 
 

@@ -124,3 +124,12 @@ h2 {
   line-height: 1;
 }
 }
+@media (max-width: 800px) {
+    #contact-page {
+        display: flex;
+        flex-wrap:wrap;
+    }
+    #follow-form {
+        margin-top: 30px;
+    }
+}
