@@ -13,8 +13,6 @@ $(function() {
         })
         .done(function(){
           $('form').append('<h1 id="thank">Thank you!</h1>');  
-          $("#submit").click(function(){
-            $("#thank").hide(10);
 });
         });
     });
