@@ -338,13 +338,22 @@ hr {
   justify-content: center;
 }
 #github img {
-  max-width: 50px;
+  max-width: 40px;
 }
 #facebook img {
-  max-width: 50px;
+  max-width: 40px;
 }
 #gmail img {
-  max-width: 70px;
+  max-width: 45px;
+}
+#github img:hover {
+  opacity: 0.7;
+}
+#facebook img:hover {
+  opacity: 0.7;
+}
+#gmail img:hover {
+  opacity: 0.7;
 }
 form {
     width: 100%;
@@ -404,29 +413,126 @@ label {
     padding-left: 20px;
 }
 /*********SKILLS PAGE*********/
-#bar-progress {
-    padding: 10%;
-}
-#pr-bar-1, #pr-bar-2, #pr-bar-3, #pr-bar-4, #pr-bar-5, #pr-bar-6 {
-    margin:10px;
-    height: 50px;
-}
-#pr-bar-2, #pr-bar-3, {
-    padding: 50px;
-}
-#html5,#css3, #js, #jq, #ps, #ai {
+#skills-page {
     display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#left-skill {
+width: 400px;
+height: auto;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+#html-5,#css-3,#js, #jq {
+    display: flex;
+    width: 100%;
+    max-width: 400px;
+    height: 40px;
+    background-color: #d94819;
     justify-content: flex-end;
-    margin-top: 13px;
-    font-size: 1.1em;
-    color: #d94819;
 }
-#aa {
-    background-color:green;
+#css-3,#js, #jq {
+  margin-top: 40px;
 }
-.color {
-    background-image: none;
-    background-color:#d94819;
+#html-5 p {
+  margin-top: 7px;
+  margin-right: 10px;
+  display: block;
+  font-size: 1.2em;
+  color: white;
+}
+#css-3 p {
+   margin-top: 7px;
+  margin-right: 10px;
+  display: block;
+  font-size: 1.2em;
+  color: white;
+}
+#js p {
+   margin-top: 7px;
+  margin-right: 10px;
+  display: block;
+  font-size: 1.2em;
+  color: white;
+}
+#jq p {
+    margin-top: 7px;
+  margin-right: 10px;
+  display: block;
+  font-size: 1.2em;
+  color: white;
+}
+#white-html {
+    width: 100%;
+    max-width: 80px;
+    height: 40px;
+    background-color: white;
+}
+#white-css {
+    width: 100%;
+    max-width: 90px;
+    height: 40px;
+    background-color: white;
+}
+#white-js {
+    width: 100%;
+    max-width: 200px;
+    height: 40px;
+    background-color: white;
+}
+#white-jq {
+    width: 100%;
+    max-width: 250px;
+    height: 40px;
+    background-color: white;
+}
+#right-skill {
+width: 400px;
+height: auto;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+#ps, #ai {
+    display: flex;
+    width: 100%;
+    max-width: 400px;
+    height: 40px;
+    background-color: white;
+    justify-content: flex-end
+}
+#ai {
+  margin-top: 40px;
+}
+#orange-ps {
+  width: 100%;
+    max-width: 350px;
+    height: 40px;
+    background-color: #d94819;
+}
+#orange-ai {
+    width: 100%;
+    max-width: 200px;
+    height: 40px;
+    background-color: #d94819;
+}
+#orange-ps p{
+  margin-top: 7px;
+  margin-left: 10px;
+  display: block;
+  font-size: 1.2em;
+  color: white;
+}
+#orange-ai p{
+  margin-top: 7px;
+  margin-left: 10px;
+  display: block;
+  font-size: 1.2em;
+  color: white;
 }
 /******FOOTER*******/
 footer {
