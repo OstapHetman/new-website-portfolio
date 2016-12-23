@@ -105,8 +105,9 @@ body {
     align-items: center;
     float: left;
     width: 50%;
-    height: 600px;
+    min-height: 600px;
     background-color: #00a9ff;
+
 }
 #portret-media {
    visibility: hidden;
@@ -122,11 +123,11 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    height: 600px;
+    min-height: 600px;
     font-size: 1.1em;
     width: 50%;
     color: #d94819;
-}
+   }
 /**************SKILLS PAGE***************/
 #skills-page {
     width: 100%;
@@ -136,7 +137,6 @@ body {
 /*************PORTFOLIO PAGE*********/
 #portfolio-page {
     width: 100%;
-
     background-color: #00a9ff;
 }
 .container {
@@ -183,6 +183,7 @@ body {
     align-items: center;
 }
 .photo-container {
+  margin-top: 3em;
   margin-bottom: 3em;
   text-align: center;
   margin-left: .8em;  
@@ -193,7 +194,7 @@ h2 {
   font-size: 1.5em;
   line-height: .4;
 }
-p {
+.photo-overlay p {
   font-size: .9375em;
   margin: 0 0 1.5em;
   line-height: 1.4;
