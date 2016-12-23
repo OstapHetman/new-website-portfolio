@@ -12,7 +12,10 @@ $(function() {
             dataType: "json"
         })
         .done(function(){
-          $('form').html('<h1>Thank you!</h1>');  
+          $('form').append('<h1 id="thank">Thank you!</h1>');  
+          $("#submit").click(function(){
+            $("#thank").hide(10);
+});
         });
     });
 });
