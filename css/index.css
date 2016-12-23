@@ -98,6 +98,8 @@ body {
 #about-page {
     width: 100%;
     min-height: 600px;
+    position: relative;
+    overflow: hidden;
 }
 #cloud-about-page {
     display: flex;
@@ -107,7 +109,6 @@ body {
     width: 50%;
     min-height: 600px;
     background-color: #00a9ff;
-
 }
 #portret-media {
    visibility: hidden;
@@ -123,10 +124,13 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    height: auto;
     min-height: 600px;
     font-size: 1.1em;
     width: 50%;
     color: #d94819;
+    position: relative;
+    overflow: hidden;
    }
 /**************SKILLS PAGE***************/
 #skills-page {
@@ -295,6 +299,8 @@ h2 {
   width: 100%;
   height: 600px;
   background-color: #75dbff;
+  position: relative;
+  overflow: hidden;
 }
 #contact-form {
     width: 500px;
@@ -535,6 +541,10 @@ align-items: center;
   font-size: 1.2em;
   color: white;
 }
+#media-ps, #media-ai {
+   visibility: hidden;
+   display: none;
+} 
 /******FOOTER*******/
 footer {
   height: 50px;
