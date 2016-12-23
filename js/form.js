@@ -7,7 +7,7 @@ $(function() {
             data: {
                 name: $('#name').val(),
                 email: $('#email').val(),
-                message: $('#message').val();
+                message: $('#message').val()
             },
             dataType: "json"
         })
