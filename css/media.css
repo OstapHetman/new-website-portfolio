@@ -24,9 +24,15 @@
 }
 @media screen and (min-width: 610px) {
     .grid {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
     }
     .cell {
         width: 50%;
@@ -60,7 +66,7 @@
         margin-top: 45%;
     }
     #about-text {
-        position: absolute;
+        position: relative;
         display: block;
         width: 100%;
         font-size: 20px;
@@ -70,8 +76,12 @@
     }
     #media-portret-div {
         padding-top: 1%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
     #portret-media {
         display: block;
@@ -103,16 +113,26 @@
 
 @media (min-width: 1024px) {
 .gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .photo-container {
   margin-bottom: 3em;
   text-align: center;
   width: 25%;  
-  flex-grow: 1;
+  -webkit-box-flex: 1;  
+      -ms-flex-positive: 1;  
+          flex-grow: 1;
 }
 }
 @media (min-width: 1600px) {
@@ -126,8 +146,11 @@ h2 {
 }
 @media (max-width: 800px) {
     #contact-page {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-wrap:wrap;
+        -ms-flex-wrap:wrap;
+            flex-wrap:wrap;
     }
     #follow-form {
         margin-top: 30px;
@@ -138,12 +161,16 @@ h2 {
     margin-top: -7em;
    } 
     #ps, #ai {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
     max-width: 400px;
     height: 40px;
     background-color: #d94819;
-    justify-content: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
 }
 #orange-ps {
   width: 100%;

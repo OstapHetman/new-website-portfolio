@@ -74,17 +74,27 @@ body {
     text-decoration: none;
 }
 #imac-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 #imac-text img {
     margin-top: 20%;
     width: 100%;
     max-width: 600px;
     height: auto;
-    align-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
 }
 #imac-text p {
     font-size: 1.1em;
@@ -97,14 +107,20 @@ body {
 /***************ABOUT PAGE*************/
 #about-page {
     width: 100%;
-    min-height: 600px;
+    height: auto;
     position: relative;
     overflow: hidden;
 }
 #cloud-about-page {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     float: left;
     width: 50%;
     min-height: 600px;
@@ -115,15 +131,24 @@ body {
    display: none;
 }
 #portret {
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     max-width: 160px;
     width: 100%;
     height: auto;
 }
 #about-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     height: auto;
     min-height: 600px;
     font-size: 1.1em;
@@ -152,9 +177,16 @@ body {
   max-width: 1920px;
  }
 .main-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .logo {
   width: 45px;
@@ -182,9 +214,16 @@ body {
 .gallery {
     width: 100%;
     height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .photo-container {
   margin-top: 3em;
@@ -231,10 +270,19 @@ h2 {
   left: 0;
   padding-left: 1.2em;
   padding-right: 1.2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: rgba(0,0,0, .5);
 }
 .photo-overlay h2 {
@@ -251,6 +299,7 @@ h2 {
   background: #345d88;
 }
 .button {
+  -webkit-transition: background .3s ease-in, color .3s ease-in;
   transition: background .3s ease-in, color .3s ease-in;
 }
 .button:hover {
@@ -259,45 +308,65 @@ h2 {
   border: solid 3px #00a9ff;
 }
 .portfolio-img  {
+  -webkit-transition: -webkit-transform .5s cubic-bezier(.7,-0.39,.31,1.38);
+  transition: -webkit-transform .5s cubic-bezier(.7,-0.39,.31,1.38);
   transition: transform .5s cubic-bezier(.7,-0.39,.31,1.38);
+  transition: transform .5s cubic-bezier(.7,-0.39,.31,1.38), -webkit-transform .5s cubic-bezier(.7,-0.39,.31,1.38);
 }
 .portfolio-img :hover {
-  transform: rotate(-5deg) scale(1.1);
+  -webkit-transform: rotate(-5deg) scale(1.1);
+          transform: rotate(-5deg) scale(1.1);
 }
 .photo-overlay {
   opacity: 0;
+  -webkit-transition: opacity .5s;
   transition: opacity .5s;
 }
 .photo-overlay:hover {
   opacity: 1;
 }
 .photo .portfolio-img  {
-  transform-origin: 0 0;
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
 }
 .photo:hover .portfolio-img  {
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 .slide .photo-overlay,
 .slide .portfolio-img  {
+  -webkit-transition: -webkit-transform .6s ease-out;
+  transition: -webkit-transform .6s ease-out;
   transition: transform .6s ease-out;
+  transition: transform .6s ease-out, -webkit-transform .6s ease-out;
 }
 .slide .photo-overlay {
-  transform: translateX(-100%);    
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);    
 }
 .slide:hover .photo-overlay {
-  transform: translateX(0);
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 .slide:hover .portfolio-img  {
-  transform: translateX(100%);    
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);    
 }
 /**********CONTACT PAGE**********/
 #contact-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
-  height: 600px;
   background-color: #75dbff;
   position: relative;
   overflow: hidden;
@@ -305,10 +374,13 @@ h2 {
 #contact-form {
     width: 500px;
     height: auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
 }
 #follow-form {
   width: 400px;
-  height: 200px;
+  height: auto;
+  margin-bottom: 70px;
 }
 #icons {
   width: 300px;
@@ -318,8 +390,13 @@ hr {
     border-top: 1px solid white;
 }
 #location,#phone, #mail {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 #location img {
   max-width: 40px;
@@ -340,9 +417,16 @@ hr {
 }
 #follow {
   margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 #github img {
   max-width: 40px;
@@ -385,8 +469,6 @@ input,textarea {
     -moz-transition: border 0.5s;
     -o-transition: border 0.5s;
     border: solid 3px #98d4f3;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 input:focus,textarea:focus {
@@ -405,8 +487,6 @@ input[type="submit"] {
     margin-top: 30px;
     font-size: 1.29em;
     -webkit-transition: background-color 0.5s;
-    -moz-transition: background-color 0.5s;
-    -o-transition: background-color 0.5s;
     transition: background-color 0.5s;
 }
 input[type="submit"]:hover {
@@ -421,26 +501,47 @@ label {
 }
 /*********SKILLS PAGE*********/
 #skills-page {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
+
 #left-skill {
 width: 400px;
 height: auto;
+display: -webkit-box;
+display: -ms-flexbox;
 display: flex;
-flex-direction: column;
-align-items: center;
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+    -ms-flex-direction: column;
+        flex-direction: column;
+-webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
 }
 #html-5,#css-3,#js, #jq {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
     max-width: 400px;
     height: 40px;
     background-color: #d94819;
-    justify-content: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
 }
 #css-3,#js, #jq {
   margin-top: 40px;
@@ -500,17 +601,28 @@ align-items: center;
 #right-skill {
 width: 400px;
 height: auto;
+display: -webkit-box;
+display: -ms-flexbox;
 display: flex;
-flex-direction: column;
-align-items: center;
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+    -ms-flex-direction: column;
+        flex-direction: column;
+-webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
 }
 #ps, #ai {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
     max-width: 400px;
     height: 40px;
     background-color: white;
-    justify-content: flex-end
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end
 }
 #ai {
   margin-top: 40px;
@@ -549,15 +661,20 @@ align-items: center;
 footer {
   height: 50px;
   background-color:#d94819; 
+  display: -webkit-box; 
+  display: -ms-flexbox; 
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 footer p {
   display: block;
   margin:0;
   color:white;
 }
-
 
 
