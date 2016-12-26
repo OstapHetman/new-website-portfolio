@@ -71,8 +71,9 @@
         width: 100%;
         font-size: 20px;
     }
-    #about-text p {
+    #about-text p{
        margin-top: 3%;
+       
     }
     #media-portret-div {
         padding-top: 1%;

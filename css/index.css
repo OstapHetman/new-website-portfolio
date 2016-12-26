@@ -157,12 +157,17 @@ body {
     position: relative;
     overflow: hidden;
    }
+#about-text p {
+  margin-left: 15px;
+  margin-right: 15px;
+}
 /**************SKILLS PAGE***************/
 #skills-page {
     width: 100%;
     height: 600px;
     background-color: #75dbff;
 }
+
 /*************PORTFOLIO PAGE*********/
 #portfolio-page {
     width: 100%;
@@ -175,6 +180,15 @@ body {
   width: 100%;
   height: auto;
   max-width: 1920px;
+ }
+ #portfolio-text {
+  padding-top: 2%;
+  color: white;
+  font-size: 2em;
+  display: block;
+  width: 100%;
+  max-width: 192px;
+  margin:0 auto;
  }
 .main-header {
   display: -webkit-box;
@@ -372,13 +386,13 @@ h2 {
   overflow: hidden;
 }
 #contact-form {
-    width: 500px;
+    width: 400px;
     height: auto;
     margin-bottom: 50px;
     margin-top: 50px;
 }
 #follow-form {
-  width: 400px;
+  width: 300px;
   height: auto;
   margin-bottom: 70px;
 }
@@ -399,7 +413,7 @@ hr {
           flex-direction: row;
 }
 #location img {
-  max-width: 40px;
+  max-width: 30px;
 }
 #location,#phone, #mail p {
   font-size: 1.3em;
@@ -410,10 +424,10 @@ hr {
   padding-left: 10px;
 }
 #phone img {
-  max-width: 40px;
+  max-width: 30px;
 }
 #mail img {
-  max-width: 40px;
+  max-width: 30px;
 }
 #follow {
   margin-top: 20px;
@@ -429,22 +443,22 @@ hr {
           justify-content: center;
 }
 #github img {
-  max-width: 40px;
+  max-width: 30px;
 }
 #facebook img {
-  max-width: 40px;
+  max-width: 30px;
 }
 #gmail img {
-  max-width: 45px;
+  max-width: 35px;
 }
 #github img:hover {
-  opacity: 0.7;
+  opacity: 0.4;
 }
 #facebook img:hover {
-  opacity: 0.7;
+  opacity: 0.4;
 }
 #gmail img:hover {
-  opacity: 0.7;
+  opacity: 0.4;
 }
 form {
     width: 100%;
@@ -516,7 +530,6 @@ label {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
 }
-
 #left-skill {
 width: 400px;
 height: auto;
